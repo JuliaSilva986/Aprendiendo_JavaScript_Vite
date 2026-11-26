@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <h1>🎯 Adivina el Número</h1>
+
+        <p>
+            La computadora ha generado un número
+            entre 1 y 100. ¡Intenta adivinarlo!
+        </p>
+
+        <form id="formulario">
+
+            <input
+                type="number"
+                id="numero"
+                min="1"
+                max="100"
+                step="1"
+                placeholder="Escribe un número"
+                aria-label="Número a adivinar"
+                required
+            >
+
+            <button type="submit" id="adivinar">
+                Adivinar
+            </button>
+
+        </form>
+
+        <p id="mensaje" role="status" aria-live="polite">
+            ¡Comienza el juego!
+        </p>
+
+        <p>Intentos realizados: <span id="intentos">0</span></p>
+
+        <button type="button" id="reiniciar">
+            Nueva partida
+        </button>
+
+    </main>
+
+    <script type="module" src="/main.js"></script>
+
+</body>
+</html>
